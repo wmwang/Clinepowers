@@ -26,7 +26,7 @@ Thanks!
 
 ## Installation
 
-**Note:** Installation differs by platform. Claude Code or Cursor have built-in plugin marketplaces. Codex and OpenCode require manual setup.
+**Note:** Installation differs by platform. Claude Code or Cursor have built-in plugin marketplaces. Cline, Codex, and OpenCode require manual setup.
 
 
 ### Claude Code (via Plugin Marketplace)
@@ -50,6 +50,24 @@ In Cursor Agent chat, install from marketplace:
 ```text
 /plugin-add clinepower
 ```
+
+### Cline
+
+Tell Cline:
+
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/obra/clinepower/refs/heads/main/.cline/INSTALL.md
+```
+
+Or manually:
+
+```bash
+git clone https://github.com/obra/clinepower.git ~/.cline/clinepower
+mkdir -p ~/.agents/skills
+ln -s ~/.cline/clinepower/skills ~/.agents/skills/clinepower
+```
+
+**Detailed docs:** [docs/README.cline.md](docs/README.cline.md)
 
 ### Codex
 
